@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+/*determinar  el precio de un ticket de ida y vuelta en ferrocarril conociendo la distancia al recorrer y sabiendo que si el numero de dias de estancia es superior a 7 y la 
+    distancia > 800 km, se debe aplicar un descuento del 30% . El programa sebe permitir al usuario calcular mas de un precio sin cerrarse.*/
+    
+    //el precio es igual a 2 dolares por km
+
+int main(){
+    
+    int dias=0;
+    int distancia=0;
+    float precio=0;
+    char opc;
+    
+    do{
+    
+    cout<<"Ingrese los dias que va quedarse en la estancia : ";
+    cin>>dias;
+     cout<<"Ingrese los km que va a recorrer el ferrocarril : ";
+    cin>>distancia;
+    
+    if(dias == 7 && distancia == 800 ){
+        precio = (2 * distancia)*0.30;
+         cout<<" el precio a pagar por su estancia es de : "<<precio<<endl;
+        precio = 0;
+    }else{
+    precio = (2 * distancia)*0.30;
+    cout<<" el precio a pagar por su estancia es de : "<<precio<<endl;
+    }
+    
+    cout<<"desea continuar ingrese Y, si no es el caso ingrese cualquier otra :";
+    cin>>opc;
+    
+    }while(opc== 'y' || opc == 'Y'); 
+    return 0;
+}
