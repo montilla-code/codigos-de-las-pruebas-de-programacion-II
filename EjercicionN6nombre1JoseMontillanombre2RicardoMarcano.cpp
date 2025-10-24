@@ -27,7 +27,7 @@ int main() {
             }
         }
 
-      
+      //repetir secuencia
         cout << "¿Desea generar otra lista? (s/n): "<<endl;
         cin >> repetir;
 

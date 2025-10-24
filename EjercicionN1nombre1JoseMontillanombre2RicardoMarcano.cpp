@@ -24,7 +24,7 @@ int main() {
         }
 
         cout << "Numero en base 10: " << numero << "\n";
-
+//repetir secuencia
         cout << "¿Deseas convertir otra cadena? (s/n): ";
         cin >> repetir;
         cin.ignore(); 

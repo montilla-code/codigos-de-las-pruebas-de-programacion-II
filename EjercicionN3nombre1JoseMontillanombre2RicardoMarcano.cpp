@@ -43,15 +43,15 @@ int main() {
                 }
             }
         }
-
-        cout << "\nResultados:\n";
+//salida de resultados
+        cout << "Resultados: ";
         cout << "El deportista mas alto es " << nombreMasAlto << " con " << alturaMasAlta << " metros" << endl;
         cout << "El deportista mas bajo es " << nombreMasBajo << " con " << alturaMasBaja << " metros" << endl;
         cout << "El promedio de altura es: " << (sumaAlturas / cantidad) << " metros" << endl;
-
+//repetir secuencia
         cout << "\n¿Deseas ingresar otro listado? (s/n): ";
         cin >> repetir;
-//repetir secuencia
+
     } while (repetir == 's' || repetir == 'S');
 
     

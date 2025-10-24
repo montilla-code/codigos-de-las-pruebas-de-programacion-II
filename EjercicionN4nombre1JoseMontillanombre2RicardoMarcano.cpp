@@ -3,13 +3,13 @@ using namespace std;
 
 int main(){
     system("color 0A");
-    int numero, suma;
+    int numero, suma=0;
     char opcion;
 
     do {
-        suma = 0; 
-
         
+
+        //solicitud del numero
         cout << "Ingrese un numero: ";
         cin >> numero;
 
@@ -25,7 +25,7 @@ int main(){
             cout<<"El numero " << numero << " no es perfecto" << endl;
         }
 
-       
+       //repetir secuencia
         cout<<"Desea verificar otro numero? (s/n): "<<endl;
         cin>>opcion;
 
